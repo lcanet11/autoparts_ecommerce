@@ -1,0 +1,24 @@
+.error{
+    background-color: red;
+}
+
+.warning{
+    background-color: yellow;
+}
+
+.textError{
+    color: red;
+}
+
+.myForm{
+    align-content: center;
+}
+
+.main {
+    display:block;
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+

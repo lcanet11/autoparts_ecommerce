@@ -1,0 +1,13 @@
+<div>
+    <h1>{{producto?.detalle?.title}}</h1>
+    <p>{{producto?.detalle?.price | currency:'ARS'}}</p>
+    <p>{{producto?.description?.plain_text}}</p>
+    <div *ngFor="let picture of producto?.detalle?.pictures">
+        <img src={{picture?.secure_url}} alt="">
+    </div>
+        <a href={{producto?.detalle?.permalink}} target="_blank">
+        <button mat-button>
+        Ver Producto en Mercado Libre
+        </button>
+        </a>
+</div>

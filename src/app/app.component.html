@@ -1,0 +1,24 @@
+
+<app-navbar></app-navbar>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">
+        <mat-nav-list dense>
+            <mat-list-item routerLink="/">
+                <mat-icon matListIcon>home<p>Inicio</p></mat-icon>
+            </mat-list-item>
+            <mat-list-item routerLink="/alta">
+                <mat-icon matListIcon>perm_identity</mat-icon>
+            </mat-list-item>
+            <mat-list-item routerLink="/ingresar">
+                <mat-icon matListIcon>login</mat-icon>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)="opened=!opened">Toggle Sidebar</button>
+        <app-main></app-main>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

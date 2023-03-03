@@ -1,0 +1,9 @@
+.footer{
+ 
+    display:block;
+    margin: auto;
+    width: 50%;
+    font-size:14px;
+    padding-bottom: 30px;
+    text-align: center;
+}

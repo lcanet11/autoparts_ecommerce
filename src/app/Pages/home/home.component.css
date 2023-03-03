@@ -1,0 +1,13 @@
+.title{
+    background-color: red;
+}
+.title-ok{
+    background-color: green;
+}
+
+.positive{
+    background-color: green;
+}
+.negative{
+    background-color: red;
+}

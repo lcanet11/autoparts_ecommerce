@@ -1,0 +1,20 @@
+
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        
+    </mat-grid-tile>
+    <mat-card *ngFor="let producto of productos">
+        <mat-card-title>
+            {{producto.title}}
+        </mat-card-title>
+        <mat-card-content>
+            {{producto.price | currency:'ARS'}}
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-raised-button routerLink="/producto/{{producto.id}}">Ver detalle</button>
+        </mat-card-actions>  
+    </mat-card>
+</mat-grid-list>
+
+
+
